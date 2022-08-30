@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <h1>mt9555</h1>
+    <p>mt9555 flask webpage assignment. {{myName}}</p>
+    <p><form action="{{ url_for('greet') }}" method='post'>
+        Please type your name: <input type='text' name='myName'><br>
+        <input type='submit' value='Submit'>
+        </form></p>
+</div>
+{% endblock %}
+
